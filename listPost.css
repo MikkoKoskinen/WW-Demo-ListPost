@@ -1,0 +1,48 @@
+.latestPostWP{
+    width: 95%;
+}
+
+.latestPostWP .resultDate {
+    font-style: italic;
+    font-size: 12px;
+}
+
+.latestPostWP .announcementItem {
+    margin-bottom: 20px;
+}
+
+.latestPostWP ul.pagination {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+.latestPostWP ul.pagination li {
+    display: inline;
+}
+
+.latestPostWP ul.pagination li a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 0 4px;
+}
+
+.latestPostWP ul.pagination li.active > a {
+    background-color: #1e8fca;
+    color: white;
+    border-radius: 5px;
+}
+
+.latestPostWP ul.pagination li a:hover:not(.active) {background-color: #ddd;}
+
+.latestPostWP .blogActions{
+    margin-bottom: 20px;
+}
+
+.latestPostWP .blogActions div.action{
+    float: left;
+    margin-right: 5px;
+}

@@ -1,0 +1,25 @@
+<div class="resultItem announcementItem" dir-paginate="post in posts | itemsPerPage: 2" pagination-id="posts">				
+	<div class="resultTitle">					
+		<a class="" href="{{viewItemURL}}{{post.ID}}">{{post.Title}}</a>				
+	</div>				
+	<div class="resultContent">					
+		<span class="resultDate"  ng-bind="post.PublishedDate | date:'LLLL dd, yyyy'"></span>					
+		<br>
+		<div class="resultDetail">{{ post.Body | htmlToPlaintext | characters:350 :true}}</div>	
+		<div class="resultMore"><a href="{{viewItemURL}}{{post.ID}}">More&#x226B;</a></div>						
+	</div>            
+</div>
+<div class="blogActions">
+	<div class="action">
+		<a class="ms-calloutLink" target="_blank" href="{{listRSSURL}}">
+		<span style="height:16px;width:16px;position:relative;display:inline-block;overflow:hidden;" class="s4-clust ms-blog-linkCommandImage">
+		<img src="/ourfirm/offices/_catalogs/theme/Themed/4D8112E7/spcommon-B35BB0A9.themedpng?ctag=3" style="position:absolute;left:-236px !important;top:-66px !important;border-width:0px;"></span>&nbsp;<span class="ms-splinkbutton-text">RSS Feed</span></a>
+	</div>
+	<div class="action">
+		<a class="ms-calloutLink" href="{{postAlertURL}}">
+			<span style="height:16px;width:16px;position:relative;display:inline-block;overflow:hidden;" class="s4-clust ms-blog-linkCommandImage"><img src="/ourfirm/offices/_catalogs/theme/Themed/4D8112E7/spcommon-B35BB0A9.themedpng?ctag=3" style="position:absolute;left:-236px !important;top:-30px !important;border-width:0px;"></span>&nbsp;<span class="ms-splinkbutton-text">Alert Me</span>
+		</a>
+		</div>
+	<div class="ms-clear"></div>
+</div>
+<dir-pagination-controls pagination-id="posts"></dir-pagination-controls>
